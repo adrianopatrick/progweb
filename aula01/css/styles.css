@@ -13,22 +13,52 @@ nav {
     position: fixed;
     left: 0; 
     right: 0;
-    max-width: 1200px;
-    margin: 6px auto;
-    background: #006884;
+    max-width: 100%;
+    min-height: 46px;
+    margin: 0px auto;
+    background: white;
     text-align: center;
-    border-radius: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
 /*css do link do menu*/
-nav > a {
+nav > div > a {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
+    color: #006884;
+}
+
+#buttonnew {
+    display: none;
+}
+
+nav > div > button {
+    margin: 9px auto;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
     color: white;
+    cursor: pointer;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 6px 12px;
+}
+
+#esquerda {
+   float: left;
+   margin-left: 16%;
+   text-align: left;
+}
+
+#direita {
+   float: right;
+   margin-right: 16%;
+   text-align: right;
 }
 
 /*css ao passar o mouse sobre os links do menu*/
-nav > a:hover {
+nav > div > a:hover {
     color: white;
     background: #4698ca;
     border-top-color: #5db1e0;
@@ -37,18 +67,46 @@ nav > a:hover {
 
 /*css que mantêm o menu responsivo*/
 @media (max-width: 600px){
-    nav > a {
+
+    nav {
+        background: #006884;
+    }
+
+    nav > div > a {
         display: block;
+        color: white;
         border-bottom: 1px solid white;
+    }
+
+    #buttonnew {
+        display: block;
+    }
+
+    nav > div > button {
+        display: none;
+    }
+
+    #center {
+        display: none;
+    }
+
+    #direita {
+        display: none;
+    }
+
+    #esquerda {
+        float: none;
+        display: block;
+        margin-left: 0px;
+        text-align: center;
     }
 }
 
 footer {
     position: absolute;
+    font: 12px Arial,sans-serif;
     margin: 0px auto;
     left: 0; right: 0;
-    max-width: 1200px;
     bottom: 5px;
-    background: #006884;
     text-align: center;
 }
