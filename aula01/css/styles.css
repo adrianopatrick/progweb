@@ -105,6 +105,7 @@ nav > div > a:hover {
 footer {
     position: absolute;
     font: 12px Arial,sans-serif;
+    color: #006884;
     margin: 0px auto;
     left: 0; right: 0;
     bottom: 5px;
