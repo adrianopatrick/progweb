@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font: 16px arial;
+}
+
+nav {
+    position: fixed;
+    left: 0; 
+    right: 0;
+    max-width: 1200px;
+    margin: 6px auto;
+    background: #006884;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav > a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+}
+
+nav > a:hover {
+    color: white;
+    background: #4698ca;
+    border-top-color: #5db1e0;
+    border-left-color: #5db1e0;
+}
+
+@media (max-width: 800px){
+    nav > a {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+}
